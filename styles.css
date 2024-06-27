@@ -1,43 +1,59 @@
 /* styles.css */
 body {
-     font-family: cursive;
+    font-family: "Gill Sans", sans-serif;
     background-color: #f0f0f0;
     margin: 10px 50px 20px;
     padding: 10px 50px 30px 0;
 }
 
 header {
-    background-color: #030008dc;
-    color: #000002;
+    background-color: #ebe8eedc;
+    color: #f3f3f7;
     text-align: start;
-    padding: 10px 50px 30px 0;
+    padding: 0;
 }
 
 main {
     max-width: 75%;
     margin: 0 auto;
-    padding: 1rem;
-    background-color: #00010850;
-    box-shadow: 0 2px 4px rgba(9, 5, 13, 0.1);
+    padding: 0;
+    background-color: #ededf3;
+    box-shadow: 3px 3px rgb(71, 64, 64), -1em 0 .4em rgb(47, 47, 51);
 }
 
 h1, h2 {
-    color: #f4efef;
+    color: #100e0e;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 1rem auto;
+    display:block;
+    margin: 5% 0;
 }
 
 ul {
-    list-style: url('/media/examples/rocket.svg');
+    list-style: url('/media/examples/rocket.sv');
     padding-left: 1rem;
 }
 
 a {
-    color: #d8dde2;
+    color: #0e64ba;
     text-decoration: underline overline #014f0d;
 }
+p {
+    animation-duration: 3s;
+    animation-name:bounce;
+  }
+  
+  @keyframes bounce {
+    from {
+      translate: 150vw 0;
+      scale: 200% 1;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
